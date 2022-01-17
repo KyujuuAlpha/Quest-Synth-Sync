@@ -67,7 +67,7 @@ class MainScreen(MDScreen):
                 continue
 
             # retrieve songs from SynthRiderz
-            self.set_status_text("Retrieving downloads for " + playlist_id
+            self.set_status_text("Retrieving downloads for " + playlist_id)
 
             # retrieve songs from bsaber for the current page
             playlist_name, songs = sync.get_sr_songs(playlist_id)

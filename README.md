@@ -22,7 +22,7 @@ This application synchronizes playlists from SynthRiderz with your local Synth R
 
 The recommended installation method is by sideloading the APK through SideQuest.  Please follow the instructions on the SideQuest [download page](https://sidequestvr.com/download) if you don't have it installed already.
 
-1. First download the latest APK from the `Actions` tab on this Github page
+1. First download the latest APK from the `Releases` or `Actions` tab on this Github page
 2. Follow [these instructions](https://learn.adafruit.com/sideloading-on-oculus-quest/install-and-use-sidequest#install-a-custom-apk-3051314-9) on how to sideload the downloaded APK through SideQuest
 
 ## License

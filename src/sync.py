@@ -50,8 +50,9 @@ def safe_path_check():
 # download a single song from SynthRiderz, returns true if it downloads
 def download_song(song):
     # construct the download url and download location
-    song_url = SR_BASE_URL + song["beatmap"][0]["download_url"]
-    download_location = CUSTOM_LEVEL_FOLDER + song["beatmap"][0]["file"]["filename"]
+    song_file = song["beatmap"]["files"][0]
+    song_url = SR_BASE_URL + song_file["download_url"]
+    download_location = CUSTOM_LEVEL_FOLDER + song_file["file"]["filename"]
 
     # basic check if it already exists or not
     if os.path.exists(download_location) == False:

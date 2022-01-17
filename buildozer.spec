@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Quest Beast Sync
+title = Quest Synth Sync
 
 # (str) Package name
-package.name = questbeastsync
+package.name = questsyncsync
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = com.kyujuualpha

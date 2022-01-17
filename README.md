@@ -1,13 +1,12 @@
-# Quest Beast Sync
+# Quest Synth Sync
 
-This application synchronizes your BeastSaber bookmarks with your Beat Saber custom levels. This app was initially created for myself due to SyncSaber not being up to date, but I expanded upon it for the learning experience (I don't recommend writing an app in Python), it's simplicity, and for a feature I wanted (that was not available using SyncSaber).
+This application synchronizes playlists from SynthRiderz with your local Synth Riders game.  This app was initially created since there was no real easy Quest-based song syncing for Synth Riders and also due to the existence of my existing Quest-Beast-Sync codebase (just used that as a template).
 
-![Android Build](https://github.com/KyujuuAlpha/Quest-Beast-Sync/actions/workflows/build-android.yml/badge.svg)
+![Android Build](https://github.com/KyujuuAlpha/Quest-Synth-Sync/actions/workflows/build-android.yml/badge.svg)
 
 ## Features
 
-- Beast Saber bookmark syncing
-- Multi-User syncing support (with playlist separation)
+- Multi-playlist syncing support
 
 ## Known Bugs
 - Text deletion in the user input field is broken because of Android.  A workaround is to select the existing text and type over it.
@@ -15,9 +14,9 @@ This application synchronizes your BeastSaber bookmarks with your Beat Saber cus
 ## Usage
 
 1. Open the application under the `Unknown Sources` section on your Quest.
-2. Set the username to whatever BeastSaber user's bookmarks you want to synchronize (this does not delete local levels).  For multiple users, separate the usernames using commas.  For example: `user1,user2,user3`
+2. Set the playlist id to whatever SynthRiderz playlist you want to synchronize (this does not delete local levels).  For multiple playlists, separate the IDs using commas.  For example: `id1,id2,id3`
 3. Click `Synchronize` and wait
-4. Open Beat Saber to play!
+4. Open Synth Riders to play!
 
 ## Installation
 
@@ -28,7 +27,7 @@ The recommended installation method is by sideloading the APK through SideQuest.
 
 ## License
 
-Quest Beast Sync is released under the MIT License terms.  Please refer to the LICENSE file.
+Quest Synth Sync is released under the MIT License terms.  Please refer to the LICENSE file.
 
 ## Credits
 - [Kivy](https://kivy.org/#home)

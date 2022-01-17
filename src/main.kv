@@ -1,7 +1,7 @@
 #:kivy 2.0.0
 <MainScreen>:
     status: status_label
-    user: user_input
+    playlist: playlist_input
     button: sync_button
     exit_button: exit_button
     spinner: spinner
@@ -9,15 +9,15 @@
         orientation: "vertical"
         padding: 25
         MDLabel:
-            text: "Quest Beast Sync"
+            text: "Quest Synth Sync"
         MDLabel:
-            text: "To synchronize with your BeastSaber bookmarks, enter your username below and click 'Synchronize.'  For multiple users, input usernames separated by a comma.  For example: 'user1,user2,user3'.  NOTE: The user input textfield has some bugs with deletion because of Android.  To delete, select the text that's already there and type over it."
+            text: "To synchronize with a SynthRiderz playlist, enter the playlist ID below and click 'Synchronize.'  For multiple playlists, input playlist IDs separated by a comma.  For example: 'id1,id2,id3'.  NOTE: The user input textfield has some bugs with deletion because of Android.  To delete, select the text that's already there and type over it."
         MDBoxLayout:
             orientation: "horizontal"
             spacing: 25
             MDTextField:
-                id: user_input
-                hint_text: "Beast Saber Username(s)"
+                id: playlist_input
+                hint_text: "Playlist ID(s)"
             MDRaisedButton:
                 id: sync_button
                 text: "Synchronize"

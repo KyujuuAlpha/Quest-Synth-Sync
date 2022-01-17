@@ -4,7 +4,7 @@
 title = Quest Synth Sync
 
 # (str) Package name
-package.name = questsyncsync
+package.name = questsynthsync
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = com.kyujuualpha

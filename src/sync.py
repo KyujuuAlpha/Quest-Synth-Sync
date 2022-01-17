@@ -14,7 +14,7 @@ SR_API_PLAYLIST_URL = "https://synthriderz.com/api/playlists/[ID]?cache=0&join[]
 
 # Folder constants
 CUSTOM_LEVEL_FOLDER = "/sdcard/Android/data/com.Kluge.SynthRiders/files/CustomSongs/"
-CUSTOM_PLAYLIST_FOLDER = "/sdcard/Android/data/com.Kluge.SynthRiders/files/CustomPlaylists/"
+CUSTOM_PLAYLIST_FOLDER = "/sdcard/Android/data/com.Kluge.SynthRiders/files/Playlist/"
 
 # App config constants
 APP_FOLDER = "/sdcard/QuestSynthSync/"

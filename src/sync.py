@@ -72,17 +72,13 @@ def create_playlist(playlist_id, playlist_name):
     playlist_url = SR_API_PLAYLIST_DL_URL.replace("[ID]", playlist_id)
     playlist_location = CUSTOM_PLAYLIST_FOLDER + playlist_name + ".playlist"
     
-    # basic check if it already exists or not
-    if os.path.exists(playlist_location) == False:
-        # download the file (streaming)
-        with requests.get(playlist_url, stream=True) as response:
-            # write the file (in chunks)
-            with open(playlist_location, "wb") as file:
-                for data_chunk in response.iter_content(chunk_size=1024):
-                    if data_chunk:
-                        file.write(data_chunk)
-    else:
-        return False
+    # download the file (streaming)
+    with requests.get(playlist_url, stream=True) as response:
+        # write the file (in chunks)
+        with open(playlist_location, "wb") as file:
+            for data_chunk in response.iter_content(chunk_size=1024):
+                if data_chunk:
+                    file.write(data_chunk)
 
 # safely check the existence of the app folder
 def safe_app_path_check():
